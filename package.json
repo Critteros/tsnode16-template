@@ -1,0 +1,39 @@
+{
+  "name": "tsnode16-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/main.ts",
+    "build": "tsc",
+    "prepare": "husky install",
+    "docker-dev": "docker-compose -f docker-compose.dev.yml up --force-recreate"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Critteros/tsnode16-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Critteros/tsnode16-template/issues"
+  },
+  "homepage": "https://github.com/Critteros/tsnode16-template#readme",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "@types/node": "^16.11.10",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "eslint": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.2"
+  }
+}
