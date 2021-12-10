@@ -2,11 +2,14 @@
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
   "extends": [
+    "prettier",
+    "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
-    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
-  "rules": {
-    "@typescript-eslint/rule-name": "error"
+  "rules": {},
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
   }
 }

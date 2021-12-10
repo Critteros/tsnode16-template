@@ -1,1 +1,3 @@
-console.log('Hello');
+import { print } from './second.js';
+
+print();
